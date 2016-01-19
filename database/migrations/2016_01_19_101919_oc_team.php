@@ -24,6 +24,7 @@ class OcTeam extends Migration
             $table->string('ques3',2000);
             $table->string('ques4',2000);
             $table->string('ques5',2000);
+            $table->string('ques6',2000);
             $table->timestamps();
         });
 

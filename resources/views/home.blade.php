@@ -10,8 +10,6 @@
 
 @section('content')
 
-
-
 <div class="row center">
 	<a href={{action('HomeController@oc')}} class="btn-large waves-effect waves-light orange">Organising Commitee</a>
 </div>

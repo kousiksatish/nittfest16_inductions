@@ -10,6 +10,6 @@
 
 @section('content')
 	<div class="row center">
-	YOu will receive correspondence soon!!!
+	You will receive correspondence soon!!!
 	</div>
 @stop

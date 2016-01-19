@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\AmbienceTeam as AmbienceTeam;
+use App\OcTeam as OcTeam;
 class HomeController extends Controller
 {
     //
@@ -40,12 +42,11 @@ class HomeController extends Controller
     	$oc->ques6 = $request->ques6;
     	$oc->save();
 
-
     	return view('finish', array("team"=>"Organising Committee", "name"=>$oc->name));
 
     }
 
-    public function ambience_store()
+    public function ambience_store(Request $request)
     {
     	$oc = new AmbienceTeam();
     	$oc->name = $request->name;
@@ -60,6 +61,6 @@ class HomeController extends Controller
     	$oc->save();
 
     	return view('finish', array("team"=>"Ambience", "name"=>$oc->name));
-
     }
+
 }

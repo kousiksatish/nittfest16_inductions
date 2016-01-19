@@ -1,7 +1,7 @@
 @extends('base')
 
 @section('heading')
-	Organising Commitee
+	Ambience
 @stop
 
 @section('heading-content')

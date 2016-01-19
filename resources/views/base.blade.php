@@ -12,7 +12,7 @@
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">NITTFEST'16</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">NITTFEST'16</a>
       <!-- <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
       </ul>
