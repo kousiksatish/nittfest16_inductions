@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AmbienceTeam extends Migration
+class PrTeam extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AmbienceTeam extends Migration
     public function up()
     {
         //
-        Schema::create('ambience_team', function (Blueprint $table) {
+        Schema::create('pr_team', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('dept');
@@ -25,9 +25,9 @@ class AmbienceTeam extends Migration
             $table->string('ques4',2000);
             $table->string('ques5',2000);
             $table->string('ques6',2000);
+            $table->string('ques7',2000);
             $table->timestamps();
         });
-
     }
 
     /**
@@ -38,6 +38,6 @@ class AmbienceTeam extends Migration
     public function down()
     {
         //
-        Schema::drop('ambience_team');
+        Schema::drop('pr_team');
     }
 }

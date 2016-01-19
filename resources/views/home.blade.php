@@ -11,15 +11,15 @@
 @section('content')
 
 <div class="row center">
-	<a href={{action('HomeController@oc')}} class="btn-large waves-effect waves-light orange">Organising Commitee</a>
-</div>
-
-<div class="row center">
 	<a href={{action('HomeController@ambience')}}   class="btn-large waves-effect waves-light orange">Ambience</a>
 </div>
 
 <div class="row center">
-	<a href="" class="btn-large waves-effect waves-light orange">OC</a>
+	<a href={{action('HomeController@oc')}} class="btn-large waves-effect waves-light orange">Organising Commitee</a>
+</div>
+
+<div class="row center">
+	<a href={{action('HomeController@pr')}}   class="btn-large waves-effect waves-light orange">Public Relations</a>
 </div>
 
 @stop

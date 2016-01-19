@@ -1,7 +1,7 @@
 @extends('base')
 
 @section('heading')
-	Organising Committee
+	Public Relations
 @stop
 
 @section('heading-content')
@@ -30,27 +30,31 @@
         </div>
         <div class="input-field col s12">
           <textarea name="ques1" class="materialize-textarea" required></textarea>
-          <label for="ques1">Introduce yourself in brief. What does NITTFEST mean to you?</label>
+          <label for="ques1">Give 2 desirable and 2 non-desirable traits of yourself.</label>
         </div>
         <div class="input-field col s12">
           <textarea name="ques2" class="materialize-textarea" required></textarea>
-          <label for="ques2">What according to you does the OC do?</label>
+          <label for="ques2">Life gives you lemons, what do you do?</label>
         </div>
         <div class="input-field col s12">
           <textarea name="ques3" class="materialize-textarea" required></textarea>
-          <label for="ques3">What qualities of yours, do you think, are going to be useful for us?</label>
+          <label for="ques3">Why did the Indian cross the road?</label>
         </div>
         <div class="input-field col s12">
           <textarea name="ques4" class="materialize-textarea" required></textarea>
-          <label for="ques4">Your fellow OC member tries to escape whenever he's been assigned with work. How would you react?</label>
+          <label for="ques4">Suggest a # (hashtag) that will uniquely define this years NITTFEST.</label>
         </div>
         <div class="input-field col s12">
           <textarea name="ques5" class="materialize-textarea" required></textarea>
-          <label for="ques5">Whom would you approach to procure audio & visual equipments to be used in the Barn Hall?</label>
+          <label for="ques5">If you were the master of ceremony of The Academy Awards (Oscars) what would your unique name be?  ( no, we don’t want your real name)</label>
         </div>
         <div class="input-field col s12">
           <textarea name="ques6" class="materialize-textarea" required></textarea>
-          <label for="ques6">You're a part of the disciplinary committee. Ther's a ruffle between your department and another. How would you react? Will you be biased?</label>
+          <label for="ques6">Suggest a new event for NITTFEST 16 with a brief description.</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea name="ques7" class="materialize-textarea" required></textarea>
+          <label for="ques7">What do you think are the trends of NIT Trichy?</label>
         </div>
       </div>
       <div class="input-field col s12">
@@ -61,3 +65,4 @@
     </form>
   </div>
 @stop
+
