@@ -65,5 +65,11 @@
   <script src="{{asset('js/materialize.js')}}"></script>
   <script src="{{asset('js/init.js')}}"></script>
 
+  <script>
+    $(document).ready(function() {
+        $('select').material_select();
+    });
+  </script>
+  
   </body>
 </html>

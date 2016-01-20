@@ -9,6 +9,7 @@
 @stop
 
 @section('content')
+<script src='https://www.google.com/recaptcha/api.js'></script>
 	<div class="row">
     <form class="col s12" method="post">
       <div class="row">
@@ -17,7 +18,7 @@
           <label for="name">Name</label>
         </div>
         <div class="input-field col s12">
-          <input name="rollno" type="text" class="validate" required>
+          <input name="rollno" type="text" class="validate" pattern=[0-9]{9} required>
           <label for="rollno">Roll no</label>
         </div>
         <div class="input-field col s12">
@@ -25,8 +26,17 @@
           <label for="dept">Department</label>
         </div>
         <div class="input-field col s12">
-          <input name="phoneno" type="text" class="validate" required>
+          <input name="phoneno" type="text" class="validate" pattern=[0-9]{10} required>
           <label for="phoneno">Phone no</label>
+        </div>
+        <div class="input-field col s12">
+          <select name="preference" required>
+            <option value="" disabled selected>Choose your option</option>
+            <option value="first">First</option>
+            <option value="second">Second</option>
+            <option value="third">Third</option>
+          </select>
+          <label>Preference of this team</label>
         </div>
         <div class="input-field col s12">
           <textarea name="ques1" class="materialize-textarea" required></textarea>
@@ -55,6 +65,10 @@
         <div class="input-field col s12">
           <textarea name="ques7" class="materialize-textarea" required></textarea>
           <label for="ques7">What do you think are the trends of NIT Trichy?</label>
+        </div>
+        <div class="input-field col s12">
+          <div class="g-recaptcha" data-sitekey="6Lfv4hUTAAAAAOySpPsr2p1WlPBy8zbpxyB4bfjA"></div>
+          <label class="control-label col-sm-2"></label>
         </div>
       </div>
       <div class="input-field col s12">
