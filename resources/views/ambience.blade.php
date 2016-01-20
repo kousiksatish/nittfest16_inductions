@@ -5,13 +5,15 @@
 @stop
 
 @section('heading-content')
-
+@if(isset($message))
+  <font color="red">{{$message}}</font>
+@endif
 @stop
 
 @section('content')
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <div class="row">
-    <form class="col s12">
+    <form class="col s12" method="post">
       <div class="row">
         <div class="input-field col s12">
           <input name="name" type="text" class="validate" required>

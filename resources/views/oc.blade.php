@@ -5,7 +5,9 @@
 @stop
 
 @section('heading-content')
-
+@if(isset($message))
+  <font color="red">{{$message}}</font>
+@endif
 @stop
 
 @section('content')

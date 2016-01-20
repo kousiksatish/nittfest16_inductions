@@ -5,7 +5,9 @@
 @stop
 
 @section('heading-content')
-
+@if(isset($message))
+  <font color="red">{{$message}}</font>
+@endif
 @stop
 
 @section('content')
@@ -76,7 +78,8 @@
 	    <i class="material-icons right">send</i>
 	  </button>
 	  </div>
-    </form>
+{!! Form::close() !!}
+
   </div>
 @stop
 

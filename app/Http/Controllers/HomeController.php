@@ -96,7 +96,7 @@ class HomeController extends Controller
         $response_arr = json_decode($api_res, true);
 
         if(!$response_arr['success'])
-            return view('oc', array('message'=>'Captcha verification failed...'));
+            return view('ambience', array('message'=>'Captcha verification failed...'));
 
     	$oc->save();
 
@@ -132,7 +132,7 @@ class HomeController extends Controller
         $response_arr = json_decode($api_res, true);
 
         if(!$response_arr['success'])
-            return view('oc', array('message'=>'Captcha verification failed...'));
+            return view('pr', array('message'=>'Captcha verification failed...'));
         $oc->save();
 
         return view('finish', array("team"=>"Public Relations", "name"=>$oc->name));
