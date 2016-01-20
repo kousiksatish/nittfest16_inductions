@@ -78,12 +78,7 @@
 	    <i class="material-icons right">send</i>
 	  </button>
 	  </div>
-<<<<<<< HEAD
-{!! Form::close() !!}
-
-=======
 </form>
->>>>>>> 8301465fcf1bbec7657b9a8a34ebba9be3a80d82
   </div>
 @stop
 
