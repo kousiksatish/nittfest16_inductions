@@ -5,7 +5,7 @@
 @stop
 
 @section('heading-content')
-	Apply to be part of something awesome!!!
+	Apply to be part of something awesome!
 @stop
 
 @section('content')

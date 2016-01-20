@@ -13,7 +13,7 @@
 @section('content')
 <script src='https://www.google.com/recaptcha/api.js'></script>
 	<div class="row">
-    <form class="col s12" method="post">
+<form class="col s12" method="post" action="{{action('HomeController@pr_store')}}" enctype="multipart/form-data">    
       <div class="row">
         <div class="input-field col s12">
           <input name="name" type="text" class="validate" required>
@@ -78,8 +78,12 @@
 	    <i class="material-icons right">send</i>
 	  </button>
 	  </div>
+<<<<<<< HEAD
 {!! Form::close() !!}
 
+=======
+</form>
+>>>>>>> 8301465fcf1bbec7657b9a8a34ebba9be3a80d82
   </div>
 @stop
 

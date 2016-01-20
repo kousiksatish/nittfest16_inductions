@@ -13,8 +13,8 @@
 @section('content')
 <script src='https://www.google.com/recaptcha/api.js'></script>
 	<div class="row">
-    <form class="col s12" method="post">
-      <div class="row">
+	<form class="col s12" method="post" action="{{action('HomeController@oc_store')}}" enctype="multipart/form-data">      
+<div class="row">
         <div class="input-field col s12">
           <input name="name" type="text" class="validate" required>
           <label for="name">Name</label>
