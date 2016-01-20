@@ -22,4 +22,10 @@
 	<a href={{action('HomeController@pr')}}   class="btn-large waves-effect waves-light orange">Public Relations</a>
 </div>
 
+<div class="row center">
+	<div class="video-container">
+		<iframe width="853" height="480" src="//www.youtube.com/embed/zZYEQhEkC1k?rel=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+</div>
 @stop
