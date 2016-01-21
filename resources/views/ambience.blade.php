@@ -11,7 +11,7 @@
 @stop
 
 @section('content')
-<script src='https://www.google.com/recaptcha/api.js'></script>
+
 <div class="row">
    <form class="col s12" method="post" action="{{action('HomeController@ambience_store')}}" enctype="multipart/form-data"> 
       <div class="row">
@@ -60,10 +60,7 @@
           <textarea name="ques5" class="materialize-textarea" required></textarea>
           <label for="ques5">What do you think can be improved in the ambience for fests in NITT?</label>
         </div>
-        <div class="input-field col s12">
-          <div class="g-recaptcha" data-sitekey="6Lfv4hUTAAAAAOySpPsr2p1WlPBy8zbpxyB4bfjA"></div>
-          <label class="control-label col-sm-2"></label>
-        </div>
+       
       </div>
       <div class="input-field col s12">
       <button class="btn-large waves-effect waves-light" type="submit" name="action">Submit
